@@ -7,5 +7,7 @@ De analyse is uitgevoerd met behulp van de R software (R Core Team. 2020. R: a l
 De code is geannoteerd, maar voel je vrij om contact op te nemen met Freek Van de Velde (freek.vandevelde@kuleuven.be) voor meer informatie.
 
 Er zijn twee files:
+
 "Literatuurgeschiedenissen_Artikel_NederlandseLetterkunde_VanDeinsenVandeVelde.R" Dit is de R code.
+
 "Literatuurgeschiedenissen_Artikel_NederlandseLetterkunde_VanDeinsenVandeVelde.RData" Dit is een bestand waarin de dataset zit, moet opgeladen worden in de R code.
