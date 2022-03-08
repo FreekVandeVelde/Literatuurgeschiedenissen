@@ -42,7 +42,7 @@ table(df.red$Geslacht)
 
 VJ.glmm <- nlme::lme(ValenceMean ~ Geslacht * poly(Jaartal.c,2), random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
 summary(VJ.glmm)
-plot(allEffects(VJ.glmm), multiline=TRUE, confint=list(style="band"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Jaartal (gecentreerd)", ylab="Valentie", main="")
+plot(allEffects(VJ.glmm), lines=list(multiline=TRUE, lty=1:2), colors="black", confint=list(style="band"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Jaartal (gecentreerd)", ylab="Valentie", main="")
 
 #modelvergelijking#
 VJ.glmm.0 <- nlme::lme(ValenceMean ~ Jaartal.c, random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
@@ -58,7 +58,7 @@ summary(VJ.glmm.4)
 
 AJ.glmm <- nlme::lme(ArousalMean ~ Geslacht * poly(Jaartal.c,2), random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
 summary(AJ.glmm)
-plot(allEffects(AJ.glmm), multiline=TRUE, confint=list(style="band"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Jaartal (gecentreerd)", ylab="Opwinding", main="")
+plot(allEffects(AJ.glmm), lines=list(multiline=TRUE, lty=1:2), colors="black", confint=list(style="band"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Jaartal (gecentreerd)", ylab="Opwinding", main="")
 
 #modelvergelijking#
 AJ.glmm.0 <- nlme::lme(ArousalMean ~ Jaartal.c, random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
@@ -74,7 +74,7 @@ summary(AJ.glmm.4)
 
 PJ.glmm <- nlme::lme(PowerMean ~ Geslacht * poly(Jaartal.c,2), random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
 summary(PJ.glmm)
-plot(allEffects(PJ.glmm), multiline=TRUE, confint=list(style="band"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Jaartal (gecentreerd)", ylab="Dominantie", main="")
+plot(allEffects(PJ.glmm), lines=list(multiline=TRUE, lty=1:2), colors="black", confint=list(style="band"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Jaartal (gecentreerd)", ylab="Dominantie", main="")
 
 #modelvergelijking#
 PJ.glmm.0 <- nlme::lme(PowerMean ~ Jaartal.c, random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
@@ -90,7 +90,7 @@ summary(PJ.glmm.4)
 
 V_ALG.glmm <- nlme::lme(ValenceMean ~ Geslacht * Reeks, random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
 summary(V_ALG.glmm)
-plot(allEffects(V_ALG.glmm), multiline=TRUE, confint=list(style="bars"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Reeks", ylab="Valentie", main="")
+plot(allEffects(V_ALG.glmm), lines=list(multiline=TRUE, lty=1:2), colors="black", confint=list(style="bars"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Reeks", ylab="Valentie", main="")
 
 #modelvergelijking#
 V_ALG.glmm.0 <- nlme::lme(ValenceMean ~ Reeks, random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
@@ -100,7 +100,7 @@ summary(V_ALG.glmm.1)
 
 A_ALG.glmm <- nlme::lme(ArousalMean ~ Geslacht * Reeks, random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
 summary(A_ALG.glmm)
-plot(allEffects(A_ALG.glmm), multiline=TRUE, confint=list(style="bars"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Reeks", ylab="Opwinding", main="")
+plot(allEffects(A_ALG.glmm), lines=list(multiline=TRUE, lty=1:2), colors="black", confint=list(style="bars"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Reeks", ylab="Opwinding", main="")
 
 #modelvergelijking#
 A_ALG.glmm.0 <- nlme::lme(ArousalMean ~ Reeks, random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
@@ -110,7 +110,7 @@ summary(A_ALG.glmm.1)
 
 P_ALG.glmm <- nlme::lme(PowerMean ~ Geslacht * Reeks, random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
 summary(P_ALG.glmm)
-plot(allEffects(P_ALG.glmm), multiline=TRUE, confint=list(style="bars"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Reeks", ylab="Dominantie", main="")
+plot(allEffects(P_ALG.glmm), lines=list(multiline=TRUE, lty=1:2), colors="black", confint=list(style="bars"), axes=list(grid=TRUE, x=list(rug=TRUE, rotate=0)), xlab="Reeks", ylab="Dominantie", main="")
 
 #modelvergelijking#
 P_ALG.glmm.0 <- nlme::lme(PowerMean ~ Reeks, random=list(~1|AuteurSentenceID, ~1|Auteur, ~1|AuteurRed), data=df.red, na.action = na.omit)
@@ -158,8 +158,9 @@ lasso.df$Binair <- ifelse(lasso.df$Lasso.coef == 0, 0, 1)
 cor.test(lasso.df$Lasso.coef, lasso.df$Freq)
 
 lasso.df$color <- ifelse(lasso.df$Lasso.coef < 0, "cyan", ifelse(lasso.df$Lasso.coef > 0, "magenta", "black"))
+lasso.df$symbol <- ifelse(lasso.df$Lasso.coef < 0, 0, ifelse(lasso.df$Lasso.coef > 0, 1, 17))
 par(mar=c(5.1, 5.1, 4.1, 2.1), mgp=c(3.7,1,0))
-plot(lasso.df$Lasso.coef, lasso.df$Freq, pch=1, las=1, xlab="Lasso coÃ«fficiÃ«nt", ylab="Lemmafrequentie", col=lasso.df$color)
+plot(lasso.df$Lasso.coef, lasso.df$Freq, las=1, xlab="Lasso coëfficiënt", ylab="Lemmafrequentie", pch=lasso.df$symbol)
 dev.off()
 
 #END#-----
