@@ -28,7 +28,7 @@ head(df.red)
 mean(table(df.red$SentenceID)) #gemiddeld aantal lemma's per zin#
 sort(table(df.red$Lemma), decreasing=TRUE) 
 length(table(df.red$Lemma))
-plot(sort(log10(table(df.red$Lemma)[1:100]),decreasing=TRUE), las=3, ylab="frequentie (log 10)", cex.axis=0.75) #Frequentie van de top-100 lemma's"
+plot(sort(log10(table(df.red$Lemma)),decreasing=TRUE)[1:100], las=3, ylab="frequentie (log 10)", cex.axis=0.75) #Frequentie van de top-100 lemma's"
 
 levels(df.red$Auteur)
 mean(droplevels(filter(df.red, Auteur == "Joost_van_den_Vondel"))$PowerMean)
@@ -160,7 +160,7 @@ cor.test(lasso.df$Lasso.coef, lasso.df$Freq)
 lasso.df$color <- ifelse(lasso.df$Lasso.coef < 0, "cyan", ifelse(lasso.df$Lasso.coef > 0, "magenta", "black"))
 lasso.df$symbol <- ifelse(lasso.df$Lasso.coef < 0, 0, ifelse(lasso.df$Lasso.coef > 0, 1, 17))
 par(mar=c(5.1, 5.1, 4.1, 2.1), mgp=c(3.7,1,0))
-plot(lasso.df$Lasso.coef, lasso.df$Freq, las=1, xlab="Lasso coëfficiënt", ylab="Lemmafrequentie", pch=lasso.df$symbol)
+plot(lasso.df$Lasso.coef, lasso.df$Freq, las=1, xlab="Lasso coÃ«fficiÃ«nt", ylab="Lemmafrequentie", pch=lasso.df$symbol)
 dev.off()
 
 #END#-----
