@@ -3,7 +3,7 @@ Kwantitatieve analyse van literatuurgeschiedenissen
 
 In dit repositorium zijn de datasets en de R code opgeslagen die horen bij het artikel:
 
-Van Deinsen, Lieke & Freek Van de Velde. Te verschijnen, 2022. ‘Geslachtelijke geschiedschrijving? Een distant reading van de evaluatie van mannelijke en vrouwelijke auteurs in Nederlandse literatuurgeschiedenissen’. Nederlandse Letterkunde 22(3).
+Van Deinsen, Lieke & Freek Van de Velde. 2022. ‘Geslachtelijke geschiedschrijving? Een distant reading van de evaluatie van mannelijke en vrouwelijke auteurs in Nederlandse literatuurgeschiedenissen’. Nederlandse Letterkunde 27(2): 121-161.
 
 Dit project beoogt een kwantitatieve distant-reading analyse van literatuurgeschiedenissen van het Nederlands.
 De data komen van de DBNL-website https://www.dbnl.org/
